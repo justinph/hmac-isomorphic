@@ -6,10 +6,10 @@ if (typeof window !== 'undefined') {
 
 const crypto = require('crypto');
 
-const createHmacDigest = async (algo, key, message) => {
+const createHmacDigest = (algo, key, message) => {
   const hmac = crypto.createHmac(algo, key);
   hmac.update(message);
-  return hmac.digest('hex');
+  return Promise.resolve(hmac.digest('hex'));
 };
 
 module.exports = createHmacDigest;
