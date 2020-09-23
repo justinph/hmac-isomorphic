@@ -1,7 +1,7 @@
 {
   "name": "hmac-isomorphic",
   "version": "0.0.1",
-  "description": "isomorphic mechanism to generate hmac, using Crypto on node.js and crypto.subtle in the browser",
+  "description": "isomorphic mechanism to generate hmac digest, using Crypto on node.js and crypto.subtle in the browser",
   "browser": "dom.js",
   "main": "node.js",
   "scripts": {
